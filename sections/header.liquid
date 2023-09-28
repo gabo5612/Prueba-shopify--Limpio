@@ -53,12 +53,30 @@
         "type": "text",
         "id": "textHeader",
         "label": "Text"
-      }, {
-        "type": "checkbox",
-        "id": "buttonHeader",
-        "label": "Button text",
-        "default": false
-      }, {
+      }, 
+      {
+        "type": "buttons",
+        "name": "bottonName",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "buttonName"
+            
+          },
+          {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "URL"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_style_secondary_1",
+            "default": false,
+            "label": "buttons"
+          }, {
         "type": "image_picker",
         "id": "bottonRightIconHeader1",
         "label": "Enter the first botton right icon"
