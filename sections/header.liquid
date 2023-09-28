@@ -13,7 +13,7 @@
       <p>{{ section.settings.textHeader }}</p>
     </div>
     <div>
-      <a href="{{section.settings.urlButton}}">
+      <a href="{{section.settings.urlButton | shopify_asset_url}}">
         <button>{{ section.settings.buttonText }}</button>
       </a>
     </div>
@@ -61,7 +61,7 @@
       }, {
         "type": "text",
         "id": "buttonText",
-        "label": "Text"
+        "label": "Button Text"
       }, {
         "type": "url",
         "id": "urlButton",
