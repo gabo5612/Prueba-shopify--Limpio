@@ -1,6 +1,24 @@
 {
-  "current": "Default",
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "iconoIzquierdoHeader": "shopify:\/\/shop_images\/Ford_Logo_Nav.svg",
+          "subtitleHeader": "subtitulo",
+          "titleHeader": "tiotulo",
+          "textHeader": "texto largo",
+          "buttonText": "nonmbre del boton",
+          "urlButton": ""
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
   "presets": {
-    "Default": { }
+    "Default": {
+    }
   }
 }
