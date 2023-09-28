@@ -1,5 +1,5 @@
 <div class="headerMainContent">
-  <div><img src="{{ section.settings.iconoIzquierdoHeader | img_url: 'medium' }}" alt="">
+  <div><img src="{{ section.settings.iconoIzquierdoHeader | img_url }}" alt="">
   </div>
   <div>
     <div>
@@ -13,15 +13,16 @@
       <p>{{ section.settings.textHeader }}</p>
     </div>
     <div>
-
-      <button>{{ section.settings.buttonText }}</button>
+      <a href="{{section.settings.urlButton}}">
+        <button>{{ section.settings.buttonText }}</button>
+      </a>
 
     </div>
   </div>
   <div>
-    <img src="{{ section.settings.bottonRightIconHeader1 | img_url: 'medium' }}" alt="">
-    <img src="{{ section.settings.bottonRightIconHeader2 | img_url: 'medium' }}" alt="">
-    <img src="{{ section.settings.bottonRightIconHeader3 | img_url: 'medium' }}" alt="">
+    <img src="{{ section.settings.bottonRightIconHeader1 | img_url }}" alt="">
+    <img src="{{ section.settings.bottonRightIconHeader2 | img_url }}" alt="">
+    <img src="{{ section.settings.bottonRightIconHeader3 | img_url }}" alt="">
   </div>
 </div>
 
