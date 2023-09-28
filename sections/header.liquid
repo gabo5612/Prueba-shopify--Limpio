@@ -13,7 +13,7 @@
       <p>{{ section.settings.textHeader }}</p>
     </div>
     <div>
-      {{section.settings.bottonName}}
+      {{ section.settings.buttonHeader }}
     </div>
   </div>
   <div>
@@ -56,30 +56,15 @@
         "type": "text",
         "id": "textHeader",
         "label": "Text"
-      }, 
-      {
-        "type": "buttons",
-        "name": "bottonName",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_label_1",
-            "default": "Button label",
-            "label": "buttonName"
-            
-          },
-          {
-            "type": "url",
-            "id": "button_link_1",
-            "label": "URL"
-          },
-          {
-            "type": "checkbox",
-            "id": "button_style_secondary_1",
-            "default": false,
-            "label": "buttons"
-          }, {
+      }, {
+        "type": "button",
+        "id": "buttonHeader",
+        "label": "Button Configuration",
+        "default": {
+          "label": "Click me",
+          "url": "#"
+        }
+      }, {
         "type": "image_picker",
         "id": "bottonRightIconHeader1",
         "label": "Enter the first botton right icon"
