@@ -12,6 +12,9 @@
     <div>
       <p>{{ section.settings.textHeader }}</p>
     </div>
+    <div>
+      {{section.settings.bottonName}}
+    </div>
   </div>
   <div>
     <img src="{{ section.settings.bottonRightIconHeader1 | img_url: 'medium' }}" alt="">
@@ -55,7 +58,7 @@
         "label": "Text"
       }, 
       {
-        "type": "buttons",
+        "type": "button",
         "name": "bottonName",
         "limit": 1,
         "settings": [
