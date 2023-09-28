@@ -4,6 +4,7 @@
       "header": {
         "type": "header",
         "settings": {
+          "iconoIzquierdoHeader": "shopify:\/\/shop_images\/Ford_Logo_Nav.svg",
           "subtitleHeader": "subtitulo",
           "titleHeader": "tiotulo",
           "textHeader": "texto largo",
