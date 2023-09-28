@@ -13,7 +13,7 @@
     {{ 'application.js' | asset_url | script_tag }}
   </head>
   <body>
-    {% sections 'header' %}
+    {% section 'header' %}
     <main role="main">
       {{ content_for_layout }}
     </main>
