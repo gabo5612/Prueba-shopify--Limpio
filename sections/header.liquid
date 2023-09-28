@@ -29,7 +29,9 @@
 
 <style>
   .headerMainContent {
-    height: 100vh;
+    background-image: url('{{section.settings.backgroundImgHeader}}');
+    background-size: cover;
+    background-repeat: no-repeat;
     width: calc(100% - 4rem / var(--font-body-scale));
     display: flex;
     flex-direction: column;
@@ -41,6 +43,11 @@
   {
     "name": "header-info",
     "settings": [
+      {
+        "type": "image_picker",
+        "id": "backgroundImgHeader",
+        "label": "Background Image"
+      },
       {
         "type": "image_picker",
         "id": "iconoIzquierdoHeader",
@@ -55,8 +62,7 @@
         "type": "text",
         "id": "titleHeader",
         "label": "Title"
-      },
-      {
+      }, {
         "type": "text",
         "id": "textHeader",
         "label": "Text"
