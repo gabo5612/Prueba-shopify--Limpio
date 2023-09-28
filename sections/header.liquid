@@ -57,25 +57,45 @@
         "id": "textHeader",
         "label": "Text"
       }, {
-        "type": "button",
-        "id": "buttonHeader",
-        "label": "Button Configuration",
-        "default": {
-          "label": "Click me",
-          "url": "#"
-        }
-      }, {
-        "type": "image_picker",
-        "id": "bottonRightIconHeader1",
-        "label": "Enter the first botton right icon"
-      }, {
-        "type": "image_picker",
-        "id": "bottonRightIconHeader2",
-        "label": "Enter the second botton right icon"
-      }, {
-        "type": "image_picker",
-        "id": "bottonRightIconHeader3",
-        "label": "Enter the thirth botton right icon"
+        "type": "buttons",
+        "name": "buttonHeader",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "button_label_1",
+            "default": "Button label",
+            "label": "buttonHeaderl",
+            "info": "buttonHeader Info"
+          },
+          {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "URL"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_style_secondary_1",
+            "default": false,
+            "label": "s"
+          },
+          {
+            "type": "text",
+            "id": "button_label_2",
+            "default": "Button label",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
+            "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
+          }, {
+            "type": "url",
+            "id": "button_link_2",
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_link_2.label"
+          }, {
+            "type": "checkbox",
+            "id": "button_style_secondary_2",
+            "default": false,
+            "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+          }
+        ]
       }
 
     ],
