@@ -1,16 +1,77 @@
 <div class="headerMainContent">
-  <div>hola</div>
-  <div>soy
+  <div><img src="{{ section.settings.iconoIzquierdoHeader | img_url: 'medium' }}" alt="">
   </div>
-  <div>texto</div>
+  <div>
+    <div>
+      <h2>
+        {{ section.settings.subtitleHeader }}</h2>
+    </div>
+    <div>
+      <h1>
+        {{ section.settings.titleHeader }}</h1>
+    </div>
+    <div>
+      <p>
+        {{ section.settings.textHeader }}</p>
+    </div>
+  </div>
+  <div>
+    <img src="{{ section.settings.bottonRightIconHeader1 | img_url: 'medium' }}" alt=""><img src="{{ section.settings.bottonRightIconHeader2 | img_url: 'medium' }}" alt=""><img src="{{ section.settings.bottonRightIconHeader3 | img_url: 'medium' }}" alt="">
+  </div>
 </div>
 
 <style>
   .headerMainContent {
-    height: 95vh;
+    height: 100vh;
     width: calc(100% - 4rem / var(--font-body-scale));
     display: flex;
     flex-direction: column;
     background-color: blue;
   }
 </style>
+
+{% schema %}
+
+  {
+    "name": "header Info",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "iconoIzquierdoHeader",
+        "label": "Enter the top left icon"
+      },
+      {
+        "type": "text",
+        "id": "subtitleHeader",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "titleHeader",
+        "label": "Title"
+      },
+      {
+        "type": "richtext",
+        "id": "textHeader",
+        "label": "Text"
+      }, {
+        "type": "checkbox",
+        "id": "buttonHeader",
+        "label": "Button text",
+        "default": "false"
+      }, {
+        "type": "image_picker",
+        "id": "bottonRightIconHeader1",
+        "label": "Enter the first botton right icon"
+      }, {
+        "type": "image_picker",
+        "id": "bottonRightIconHeader2",
+        "label": "Enter the second botton right icon"
+      }, {
+        "type": "image_picker",
+        "id": "bottonRightIconHeader3",
+        "label": "Enter the thirth botton right icon"
+      }
+    ]
+  }
+{% endschema %}
