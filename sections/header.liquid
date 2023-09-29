@@ -4,64 +4,66 @@
       <img src="{{ section.settings.iconoIzquierdoHeader | img_url }}" alt="">
     </div>
     <div class="textButtonHeader">
-        <h2>{{ section.settings.subtitleHeader }}</h2>
-        <h1>{{ section.settings.titleHeader }}</h1>
-        <p>{{ section.settings.textHeader }}</p>
-        <a href="{{section.settings.urlButton}}">
-           <button class="buttonHeader">{{ section.settings.buttonText }}</button>
-        </a>
-      </div>
+      <h2>{{ section.settings.subtitleHeader }}</h2>
+      <h1>{{ section.settings.titleHeader }}</h1>
+      <p>{{ section.settings.textHeader }}</p>
+      <a href="{{section.settings.urlButton}}">
+        <button class="buttonHeader">{{ section.settings.buttonText }}</button>
+      </a>
     </div>
-    <div class="headerBotton">
-      <img src="{{ section.settings.bottonRightImg1 | img_url }}" alt="">
-      <img src="{{ section.settings.bottonRightImg2 | img_url }}" alt="">
-      <img src="{{ section.settings.bottonRightImg3 | img_url }}" alt="">
-    </div>
+  </div>
+  <div class="headerBotton">
+    <img src="{{ section.settings.bottonRightImg1 | img_url }}" alt="">
+    <img src="{{ section.settings.bottonRightImg2 | img_url }}" alt="">
+    <img src="{{ section.settings.bottonRightImg3 | img_url }}" alt="">
   </div>
 </div>
 
 <style>
-  
-  @media (min-width: 750px) {
-    .headerMainContent {
-    background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/8f8a289bedb414d0801d25743a5efc7b.jpg?v=1695854464');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 95vh;
-    width: calc(100% - 4rem / var(--font-body-scale));
-    display: flex;
-    flex-direction: column;
 
-  }
-  .headerBotton {
-    height: 250px;
-    width: 250px;
-  }
-  .topIconHeader{
-    margin: 40px 0 0 40px;
-  }
-  .textButtonHeader{
+  @media(min-width: 750px) {
+    .headerMainContent {
+      background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/8f8a289bedb414d0801d25743a5efc7b.jpg?v=1695854464');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 95vh;
+      width: calc(100% - 4rem / var(--font-body-scale));
+      display: flex;
+      flex-direction: column;
+
+    }
+    .headerBotton {
+      height: 250px;
+      width: 250px;
+    }
+    .topIconHeader {
+      margin: 40px 0 0 40px;
+    }
+    .textButtonHeader {
       font-family: 'Kanit', sans-serif;
       color: #fff;
       margin-left: 175px;
-  }
-  .textButtonHeader h2{
-    font-size: 56px;
-  }
-  .textButtonHeader h1{
-    font-size: 112px; 
-  }
-  .textButtonHeader p{
-    font-size: 24px;
-  }
-  .textButtonHeader h2, h1, p{
-    margin: 0;
-  }
-  .buttonHeader{
-    background: #37A9E8;
-    color: #fff;
-    padding: 32px; 
-  }
+    }
+    .textButtonHeader h2 {
+      font-size: 56px;
+    }
+    .textButtonHeader h1 {
+      font-size: 112px;
+    }
+    .textButtonHeader p {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .textButtonHeader h2,
+    h1,
+    p {
+      margin: 0;
+    }
+    .buttonHeader {
+      background: #37A9E8;
+      color: #fff;
+      padding: 32px;
+    }
   }
 </style>
 
