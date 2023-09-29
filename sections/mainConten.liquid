@@ -2,7 +2,7 @@
   <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Texture.svg?v=1695855363" alt="">
   <div>
     <img src="{{section.settings.mainImage}}" alt="">
-    <p>{{section.settings.textMainContent}}</p>
+    <p>{{ section.settings.textMainContent }}</p>
   </div>
   <div>
     <img src="{{section.settings.imagenMain1}}" alt="">
@@ -13,7 +13,7 @@
 
 <style></style>
 
-{%{  schema  %}  
+{% schema %}
   {
     "name": "MainContent-Info",
     "settings": [
@@ -31,7 +31,8 @@
         "type": "image_picker",
         "id": "imagenMain1",
         "label": "Botton Imagen 1"
-      }, {
+      },
+      {
         "type": "image_picker",
         "id": "imagenMain2",
         "label": "Botton Imagen 2"
@@ -47,4 +48,4 @@
       }
     ]
   }
-{% endschema %} 
+{% endschema %}
