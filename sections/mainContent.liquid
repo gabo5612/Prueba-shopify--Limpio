@@ -1,14 +1,16 @@
 <div class="mainContent">
   <div class="mainContentTop">
     <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Texture.svg?v=1695855363" alt="">
-    <div class="mainContentMid">
-      <img src="{{section.settings.mainImage | img_url}}" alt="">
-      <p>{{ section.settings.textMainContent }}</p>
-    </div>
-    <div class="mainContentBotton">
-      <img src="{{section.settings.imagenMain1 | img_url}}" alt="">
-      <img src="{{section.settings.imagenMain2 | img_url}}" alt="">
-      <img src="{{section.settings.imagenMain3 | img_url}}" alt="">
+    <div class="mainContentWraper">
+      <div class="mainContentMid">
+        <img src="{{section.settings.mainImage | img_url}}" alt="">
+        <p>{{ section.settings.textMainContent }}</p>
+      </div>
+      <div class="mainContentBotton">
+        <img src="{{section.settings.imagenMain1 | img_url}}" alt="">
+        <img src="{{section.settings.imagenMain2 | img_url}}" alt="">
+        <img src="{{section.settings.imagenMain3 | img_url}}" alt="">
+      </div>
     </div>
   </div>
 </div>
@@ -31,6 +33,12 @@
     .mainContentBotton img {
       width: 416px;
       height: 416px;
+    }
+    .mainContentWraper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
   }
