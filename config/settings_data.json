@@ -15,8 +15,8 @@
           "bottonRightImg3": "shopify:\/\/shop_images\/Component_1.svg"
         }
       },
-      "mainConten": {
-        "type": "mainConten",
+      "mainContent": {
+        "type": "mainContent",
         "settings": {
           "mainImage": "shopify:\/\/shop_images\/NNCCF-Logo-JPG_1.svg",
           "textMainContent": "Join Ford in supporting local families battling childhood cancer. NNCCF relies on funding from you and community events like Dozers & Dirt to give over $8 million to individual families.",
