@@ -10,9 +10,9 @@
         <p>{{ section.settings.textMainContent }}</p>
       </div>
       <div class="mainContentBotton">
-        <img src="{{section.settings.imagenMain1 | asset_url}}" alt="">
-        <img src="{{section.settings.imagenMain2 | asset_url}}" alt="">
-        <img src="{{section.settings.imagenMain3 | asset_url}}" alt="">
+        <img src="{{section.settings.imagenMain1 | img_url: '450x450'}}" alt="">
+        <img src="{{section.settings.imagenMain2 | img_url: '450x450'}}" alt="">
+        <img src="{{section.settings.imagenMain3 | img_url: '450x450'}}" alt="">
       </div>
     </div>
   </div>
