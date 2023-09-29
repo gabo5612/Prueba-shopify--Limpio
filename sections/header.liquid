@@ -21,7 +21,7 @@
 
       </div>
     </div>
-    <div>
+    <div class="headerBotton">
       <img src="{{ section.settings.bottonRightIconHeader1 | img_url }}" alt="">
       <img src="{{ section.settings.bottonRightIconHeader2 | img_url }}" alt="">
       <img src="{{ section.settings.bottonRightIconHeader3 | img_url }}" alt="">
@@ -40,17 +40,16 @@
     flex-direction: column;
 
   }
+  .headerBotton {
+    height: 250px;
+    width: 250px;
+  }
 </style>
 
 {% schema %}
   {
     "name": "header-info",
     "settings": [
-      {
-        "type": "image_picker",
-        "id": "backgroundImgHeader",
-        "label": "Background Image"
-      },
       {
         "type": "image_picker",
         "id": "iconoIzquierdoHeader",
@@ -65,7 +64,8 @@
         "type": "text",
         "id": "titleHeader",
         "label": "Title"
-      }, {
+      },
+      {
         "type": "text",
         "id": "textHeader",
         "label": "Text"
