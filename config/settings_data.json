@@ -24,6 +24,12 @@
           "imagenMain2": "shopify:\/\/shop_images\/b00a980a0756dff129d1aedc80296546.jpg",
           "imagenMain3": "shopify:\/\/shop_images\/c60979570e53ba4bae0d789f3923be2e.jpg"
         }
+      },
+      "video": {
+        "type": "video",
+        "settings": {
+          "video": "shopify:\/\/files\/videos\/Noisestorm - Crab Rave [Monstercat Release].mp4"
+        }
       }
     },
     "content_for_index": [
