@@ -4,21 +4,12 @@
       <img src="{{ section.settings.iconoIzquierdoHeader | img_url }}" alt="">
     </div>
     <div class="textButtonHeader">
-     
-        <h2>
-          {{ section.settings.subtitleHeader }}</h2>
-      
-     
+        <h2>{{ section.settings.subtitleHeader }}</h2>
         <h1>{{ section.settings.titleHeader }}</h1>
-      
-     
         <p>{{ section.settings.textHeader }}</p>
-      
-     
         <a href="{{section.settings.urlButton}}">
-          <button>{{ section.settings.buttonText }}</button>
+           <button class="buttonHeader">{{ section.settings.buttonText }}</button>
         </a>
-
       </div>
     </div>
     <div class="headerBotton">
@@ -51,8 +42,22 @@
   }
   .textButtonHeader{
       font-family: 'Kanit', sans-serif;
+      color: #fff;
   }
-
+  .textButtonHeader h2{
+    font-size: 56px;
+  }
+  .textButtonHeader h1{
+    font-size: 112px; 
+  }
+  .textButtonHeader p{
+    font-size: 24px;
+  }
+  .buttonHeader{
+    background: #37A9E8;
+    color: #fff;
+    padding: 32px; 
+  }
   }
 </style>
 
