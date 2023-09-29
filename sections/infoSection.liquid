@@ -1,18 +1,82 @@
-<div>
-    <div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
+<div class="infoSection">
+  <div class="wraperInfoSection">
+    <div class="infoSectionImg">
+      <img src="{{section.settings.infoFirstImg}}" alt="">
     </div>
-    <div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
+    <div class="infoSectionText">
+      <h3>{{ % section.settings.infoFirstTitle% }}</h3>
+      <p>{{ section.settings.infoFirstText }}</p>
+      <a href="{{section.settings.UrlFirstButton}}">
+        <button>{{ section.settings.infoFirstButtonText }}</button>
+      </a>
     </div>
+  </div>
+  <div class="wraperInfoSection">
+    <div class="infoSectionImg">
+      <img src="{{section.settings.infoSecondImg}}" alt="">
+    </div>
+    <div class="infoSectionText">
+      <h3>{{ % section.settings.infoSecondTitle% }}</h3>
+      <p>{{ section.settings.infoSecondText }}</p>
+      <a href="{{section.settings.UrlSecondButton}}">
+        <button>{{ section.settings.infoSecondButtonText }}</button>
+      </a>
+    </div>
+  </div>
 </div>
+
+<style></style>
+
+{% schema %}
+  {
+    "name": "infoSection",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "infoFirstImg",
+        "label": "First Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "infoSecondImg",
+        "label": "Second Image"
+      },
+      {
+        "type": "text",
+        "id": "infoFirstTitle",
+        "label": "First Title"
+      },
+      {
+        "type": "text",
+        "id": "infoSecondTitle",
+        "label": "Second Title"
+      }, {
+        "type": "text",
+        "id": "infoFirstText",
+        "label": "First Text"
+      }, {
+        "type": "text",
+        "id": "infoSecondText",
+        "label": "Second Text"
+      }, {
+        "type": "text",
+        "id": "infoFirstButtonText",
+        "label": "First Button Text"
+      }, {
+        "type": "text",
+        "id": "infoSecondButtonText",
+        "label": "Second Button Text"
+      }, {
+        "type": "url",
+        "id": "UrlFirstButton",
+        "label": "First Button URL"
+
+      }, {
+        "type": "url",
+        "id": "UrlSecondButton",
+        "label": "Second Button URL"
+
+      }
+    ]
+  }
+{% endschema %}
