@@ -1,10 +1,45 @@
 <div>
-  <img src="" alt="">
+  <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Texture.svg?v=1695855363" alt="">
   <div>
-    <img src="" alt="">
-    <p></p>
+    <img src="{{section.settings.mainImage}}" alt="">
+    <p>{{section.settings.textMainContent}}</p>
   </div>
   <div>
-    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+    <img src="{{section.settings.imagenMain1}}" alt="">
+    <img src="{{section.settings.imagenMain2}}" alt="">
+    <img src="{{section.settings.imagenMain3}}" alt="">
   </div>
 </div>
+
+<style></style>
+
+{%{  schema  %}  
+  {
+    "name": "MainContent-Info",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "mainImage",
+        "label": "Enter top main Image"
+      },
+      {
+        "type": "text",
+        "id": "textMainContent",
+        "label": "Text MainContent"
+      },
+      {
+        "type": "image_picker",
+        "id": "imagenMain1",
+        "label": "Botton Imagen 1"
+      }, {
+        "type": "image_picker",
+        "id": "imagenMain2",
+        "label": "Botton Imagen 2"
+      }, {
+        "type": "image_picker",
+        "id": "imagenMain3",
+        "label": "Botton Imagen 3"
+      }
+    ]
+  }
+{% endschema %} 
