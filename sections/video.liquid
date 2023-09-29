@@ -1,38 +1,30 @@
-<div class="videoMain">
+<div>
   <div class="wraper">
-    <iframe
-      src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}"
-      class="youtube"
-      allow="autoplay; encrypted-media"></iframe>
+    <video
+      src="{{section.settings.video.sources[1].url}}"
+      muted
+      controls></video>
   </div>
 </div>
 
-<style>
-  .videoMain {
-    display: grid;
-    justify-items: center;
-  }
-</style>
+<style></style>
 
 
 
 {% schema %}
   {
     "name": "Video",
+    "class": "video-section",
     "settings": [
       {
-        "type": "video_url",
-        "id": "video_url",
-        "accept": ["youtube"],
-        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "label": "URL",
-        "info": "Video plays in the page."
+        "type": "video",
+        "id": "video",
+        "label": "Select your video"
       }
-
     ],
     "presets": [
       {
-        "name": "Video by URL"
+        "name": "Video"
       }
     ]
   }
