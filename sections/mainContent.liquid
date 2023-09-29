@@ -10,9 +10,9 @@
         <p>{{ section.settings.textMainContent }}</p>
       </div>
       <div class="mainContentBotton">
-        <img src="{{section.settings.imagenMain1 | img_url: 'high' }}" alt="">
-        <img src="{{section.settings.imagenMain2 | img_url}}" alt="">
-        <img src="{{section.settings.imagenMain3 | img_url}}" alt="">
+        <img src="{{section.settings.imagenMain1 | img_url: width: 420 height: 180 }}" alt="">
+        <img src="{{section.settings.imagenMain2 | img_url: width: 420 height: 180}}" alt="">
+        <img src="{{section.settings.imagenMain3 | img_url: width: 420 height: 180}}" alt="">
       </div>
     </div>
   </div>
@@ -33,10 +33,7 @@
       display: grid;
       justify-items: center;
     }
-    .mainContentMid img {
-      width: 420px;
-      height: 180px;
-    }
+
     .mainContentMid p {
       width: 848px;
       font-size: 24px;
