@@ -1,24 +1,24 @@
 <div class="infoSection">
   <div class="wraperInfoSection">
     <div class="infoSectionImg">
-      <img src="{{section.settings.infoFirstImg}}" alt="">
+      <img src="{{section.settings.infoFirstImg | img_url: '560x560' }}" alt="">
     </div>
     <div class="infoSectionText">
-      <h3>{{ % section.settings.infoFirstTitle% }}</h3>
-      <p>{{ % section.settings.infoFirstText % }}</p>
-      <a href="{{section.settings.UrlFirstButton}}">
+      <h3>{{ section.settings.infoFirstTitle }}</h3>
+      <p>{{ section.settings.infoFirstText }}</p>
+      <a href="{{section.settings.UrlFirstButton }}">
         <button>{{ section.settings.infoFirstButtonText }}</button>
       </a>
     </div>
   </div>
   <div class="wraperInfoSection">
     <div class="infoSectionImg">
-      <img src="{{section.settings.infoSecondImg}}" alt="">
+      <img src="{{section.settings.infoSecondImg | img_url: '560x560'}}" alt="">
     </div>
     <div class="infoSectionText">
-      <h3>{{ % section.settings.infoSecondTitle% }}</h3>
-      <p>{{ % section.settings.infoSecondText % }}</p>
-      <a href="{{section.settings.UrlSecondButton}}">
+      <h3>{{ section.settings.infoSecondTitle }}</h3>
+      <p>{{ section.settings.infoSecondText }}</p>
+      <a href="{{section.settings.UrlSecondButton }}">
         <button>{{ section.settings.infoSecondButtonText }}</button>
       </a>
     </div>
