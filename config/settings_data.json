@@ -45,6 +45,11 @@
           "UrlFirstButton": "#",
           "UrlSecondButton": "#"
         }
+      },
+      "form": {
+        "type": "form",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
