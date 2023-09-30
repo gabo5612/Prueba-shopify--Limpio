@@ -1,57 +1,80 @@
 <div class="headerMainContent formMain">
   <div class="formWrapper">
-  <div class="formInfo">
-    <div><img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/D_and_D_logo.svg?v=1696082767" alt=""></div>
-    <div>
-      <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/logo_2020_1_1.svg?v=1695999866" alt="">
-      <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860" alt="">
-      <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Component_1.svg?v=1695991865" alt="">
+    <div class="formInfo">
+      <div><img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/D_and_D_logo.svg?v=1696082767" alt=""></div>
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/logo_2020_1_1.svg?v=1695999866" alt="">
+        <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860" alt="">
+        <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Component_1.svg?v=1695991865" alt="">
+      </div>
     </div>
-  </div>
-  <div class="formInfo">
-    <div class="formTexts">
-      <h3>Enter now for a chance to win</h3>
-      <h2>two tickets to dozers & dirt</h2>
-      <p>Includes: A chance for your child to operate heavy equipment, get up close to a RAVEN helicopter, & more!</p>
+    <div class="formInfo">
+      <div class="formTexts">
+        <h3>Enter now for a chance to win</h3>
+        <h2>two tickets to dozers & dirt</h2>
+        <p>Includes: A chance for your child to operate heavy equipment, get up close to a RAVEN helicopter, & more!</p>
+      </div>
+      <div>
+        {% form 'contact' %}
+          {{ form.errors | default_errors }}
+
+          <div class="first-name">
+
+            <input
+              type="text"
+              name="contact[first_name]"
+              id="first-name"
+              placeholder="First name" />
+          </div>
+
+          <div class="last-name">
+
+            <input
+              type="text"
+              name="contact[last_name]"
+              id="last-name"
+              placeholder="Last name" />
+          </div>
+
+          <div class="email">
+
+            <input
+              type="email"
+              name="contact[email]"
+              id="email"
+              placeholder="Email" />
+          </div>
+
+          <div class="phone">
+
+            <input
+              type="tel"
+              name="contact[phone]"
+              id="phone"
+              placeholder="Phone" />
+          </div>
+
+
+          <div class="zipCode">
+            <textarea
+              name="contact[body]"
+              id="zipCode"
+              placeholder="Zip Code"></textarea>
+          </div>
+
+          <div class="submit">
+            <input
+              type="submit"
+              value="Submit"
+              class="buttons" />
+          </div>
+        {% endform %}
+
+      </div>
+      <div class="formTexts">
+        <span>NO PURCHASE NECESSARY. Starts 9/13/23; Ends 9/22/23. Winners will be selected & notified xxxxxxxx.</span>
+      </div>
     </div>
-    <div>
-      {% form 'contact' %}
-        {{ form.errors | default_errors }}
-      
-        <div class="first-name">
-          <label for="first-name">First name</label>
-          <input type="text" name="contact[first_name]" id="first-name" />
-        </div>
-      
-        <div class="last-name">
-          <label for="last-name">Last name</label>
-          <input type="text" name="contact[last_name]" id="last-name" />
-        </div>
-        
-        <div class="email">
-          <label for="email">Email</label>
-          <input type="email" name="contact[email]" id="email" />
-        </div>
-      
-        <div class="phone">
-          <label for="phone">Phone</label>
-          <input type="tel" name="contact[phone]" id="phone" />
-        </div>
-      
-      
-        <div class="zipCode">
-          <label for="zipCode">Zip Code</label>
-          <textarea name="contact[body]" id="zipCode"></textarea>
-        </div>
-      
-        <div class="submit">
-          <input type="submit" value="Create" class="buttons"/>
-        </div>
-      {% endform %}
-      
-    </div>
-    <div class="formTexts"><span>NO PURCHASE NECESSARY. Starts 9/13/23; Ends 9/22/23. Winners will be selected & notified xxxxxxxx.</span></div>
-  </div>
   </div>
 </div>
 
@@ -59,40 +82,41 @@
   .formMain {
     background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/ba5820c5acf8872790f8ca3ff9043af7.jpg?v=1696038766');
   }
-  .formWrapper{
+  .formWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
-  .formInfo{
+  .formInfo {
     display: flex;
     flex-direction: column;
     width: 50vw;
     align-items: center;
 
   }
-  .formTexts{
+  .formTexts {
     color: #FFF;
-font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;
 
   }
-  .formTexts h3{
+  .formTexts h3 {
     font-size: 32px;
-font-weight: 700;
-text-transform: uppercase;
+    font-weight: 700;
+    text-transform: uppercase;
   }
-  .formTexts h2{
+  .formTexts h2 {
     font-size: 88px;
-font-style: normal;
-font-weight: 700; 
+    text-transform: uppercase;
+    font-weight: 700;
+
   }
-  .formTexts p{
-    font-size: 24px; 
+  .formTexts p {
+    font-size: 24px;
     font-weight: 500;
   }
-  .formTexts span{
-    font-size: 16px; 
+  .formTexts span {
+    font-size: 16px;
     font-weight: 400;
   }
 </style>
