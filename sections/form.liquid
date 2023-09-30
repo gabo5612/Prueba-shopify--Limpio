@@ -18,7 +18,7 @@
         {% form 'contact' %}
           {{ form.errors | default_errors }}
 
-          <div class="first-name">
+          <div class="Full Name">
 
             <input
               type="text"
@@ -26,10 +26,6 @@
               id="first-name"
               placeholder="First name"
               class="formulary" />
-          </div>
-
-          <div class="last-name">
-
             <input
               type="text"
               name="contact[last_name]"
@@ -37,7 +33,6 @@
               placeholder="Last name"
               class="formulary" />
           </div>
-
           <div class="email">
 
             <input
