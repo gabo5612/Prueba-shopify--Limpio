@@ -27,7 +27,6 @@
           <label for="last-name">Last name</label>
           <input type="text" name="contact[last_name]" id="last-name" />
         </div>
-      
         
         <div class="email">
           <label for="email">Email</label>
@@ -40,13 +39,13 @@
         </div>
       
       
-        <div class="message">
+        <div class="zipCode">
           <label for="zipCode">Zip Code</label>
           <textarea name="contact[body]" id="zipCode"></textarea>
         </div>
       
         <div class="submit">
-          <input type="submit" value="Create" />
+          <input type="submit" value="Create" class="buttons"/>
         </div>
       {% endform %}
       
@@ -59,5 +58,11 @@
 <style>
   .formMain {
     background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/ba5820c5acf8872790f8ca3ff9043af7.jpg?v=1696038766');
+  }
+  .formWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 </style>
