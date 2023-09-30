@@ -152,16 +152,45 @@
     margin-bottom: 16px;
   }
 </style>
-
 {% schema %}
   {
-    "name": "form",
+    "name": "Slideshow",
+    "tag": "section",
+    "class": "slideshow",
+    "max_blocks": 5,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Slideshow"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Slide",
+        "type": "slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
-        "name": "form",
+        "name": "Slideshow",
         "settings": {
-          "title": "form"
-        }
+          "title": "Slideshow"
+        },
+        "blocks": [
+          {
+            "type": "slide"
+          }, {
+            "type": "slide"
+          }
+        ]
       }
     ]
   }
