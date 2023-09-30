@@ -1,6 +1,39 @@
-<div>
-    <h3></h3>
-    <a href="#">
-        <button></button>
+<div class="callToAction">
+  <div class="wrapperCallToAction">
+    <h3>{{ section.settings.callToActionText }}</h3>
+    <a href="{{section.settings.callToActionURL}}">
+      <button>{{ section.settings.bottonCallToAction }}</button>
     </a>
+  </div>
 </div>
+<style>
+  .callToAction {
+    background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/7fd43e27e092879c2eaab9e803264b36.jpg?v=1696104810');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "callToAction",
+    "settings": [
+      {
+        "type": "text",
+        "id": "callToActionText",
+        "label": "Call to Action Text"
+      }, {
+        "type": "text",
+        "id": "bottonCallToAction",
+        "label": "Text of the Button"
+      }, {
+        "type": "url",
+        "id": "callToActionURL",
+        "label": "URL"
+
+      }
+
+    ]
+  }
+{% endschema %}
