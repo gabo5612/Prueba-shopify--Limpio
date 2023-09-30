@@ -15,60 +15,60 @@
         <p>Includes: A chance for your child to operate heavy equipment, get up close to a RAVEN helicopter, & more!</p>
       </div>
       <div class="formInputWrapper">
+        {% form 'contact' method = "post" id = 'form' %}
+          {{ form.errors | default_errors }}
+
+          <div class="fullName">
+
+            <input
+              type="text"
+              name="contact[first_name]"
+              id="first-name"
+              placeholder="First name"
+              class="formulary" />
+            <input
+              type="text"
+              name="contact[last_name]"
+              id="last-name"
+              placeholder="Last name"
+              class="formulary" />
+          </div>
+          <div class="email">
+
+            <input
+              type="email"
+              name="contact[email]"
+              id="email"
+              placeholder="Email"
+              class="formulary bottonFormulary" />
+          </div>
+
+          <div class="phone">
+
+            <input
+              type="tel"
+              name="contact[phone]"
+              id="phone"
+              placeholder="Phone"
+              class="formulary bottonFormulary" />
+          </div>
 
 
+          <div class="zipCode">
+            <input
+              name="contact[zipcode]"
+              id="zipCode"
+              placeholder="Zip Code"
+              class="formulary bottonFormulary" />
+          </div>
 
-        <div class="fullName">
-
-          <input
-            type="text"
-            name="contact[first_name]"
-            id="first-name"
-            placeholder="First name"
-            class="formulary" />
-          <input
-            type="text"
-            name="contact[last_name]"
-            id="last-name"
-            placeholder="Last name"
-            class="formulary" />
-        </div>
-        <div class="email">
-
-          <input
-            type="email"
-            name="contact[email]"
-            id="email"
-            placeholder="Email"
-            class="formulary bottonFormulary" />
-        </div>
-
-        <div class="phone">
-
-          <input
-            type="tel"
-            name="contact[phone]"
-            id="phone"
-            placeholder="Phone"
-            class="formulary bottonFormulary" />
-        </div>
-
-
-        <div class="zipCode">
-          <input
-            name="contact[zipcode]"
-            id="zipCode"
-            placeholder="Zip Code"
-            class="formulary bottonFormulary" />
-        </div>
-
-        <div class="submit">
-          <input
-            type="submit"
-            value="Submit"
-            class="buttons formButton" />
-        </div>
-
+          <div class="submit">
+            <input
+              type="submit"
+              value="Submit"
+              class="buttons formButton" />
+          </div>
+        {% endform %}
 
       </div>
       <div class="formTexts">
@@ -153,6 +153,37 @@
     margin-bottom: 16px;
   }
 </style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#form').submit(function(e) {
+      e.preventDefault();
+
+// Evita el comportamiento predeterminado de enviar el formulario.
+
+// Obtiene los datos del formulario.
+      var formData = $(this).serialize();
+
+// Realiza una solicitud AJAX para enviar los datos del formulario.
+      $.ajax({
+        type: 'POST', // Método POST para enviar datos.
+        url: '/enviar-formulario', // URL de destino del formulario.
+        data: formData, // Datos del formulario serializados.
+        success: function(response) {
+
+// Maneja la respuesta aquí, por ejemplo, muestra un mensaje de éxito.
+          alert('Formulario enviado con éxito');
+        },
+        error: function(error) {
+
+// Maneja los errores aquí, por ejemplo, muestra un mensaje de error.
+          alert('Error al enviar el formulario');
+        }
+      });
+    });
+  });
+</script>
+
 {% schema %}
   {
     "name": "form",
