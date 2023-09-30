@@ -1,9 +1,8 @@
 <div class="callToAction">
   <div class="wrapperCallToAction">
     <h3>{{ section.settings.callToActionText }}</h3>
-    <a href="{{section.settings.callToActionURL}}">
-      <button>{{ section.settings.bottonCallToAction }}</button>
-    </a>
+    <button>{{ section.settings.bottonCallToAction }}</button>
+
   </div>
 </div>
 <style>
@@ -28,10 +27,6 @@
         "type": "text",
         "id": "bottonCallToAction",
         "label": "Text of the Button"
-      }, {
-        "type": "url",
-        "id": "callToActionURL",
-        "label": "URL"
       }
 
     ],
