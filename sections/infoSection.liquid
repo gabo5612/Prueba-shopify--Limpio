@@ -81,18 +81,21 @@
       width: 270px;
     }
   }
-  @media(min-width: 1023px) {}
-  @media(min-width: 1439px) {
+  @media(min-width: 1023px) {
     .wraperInfoSection {
       flex-direction: row;
-      gap: 30px;
     }
-    .wraperInfoSection:nth-child(2) {
-      flex-direction: row-reverse;
-      margin: 140px 0;
-    }
-
   }
+  @media(min-width: 1439px) {
+
+    gap: 30px;
+  }
+  .wraperInfoSection:nth-child(2) {
+    flex-direction: row-reverse;
+    margin: 140px 0;
+  }
+
+}
 </style>
 {% schema %}
   {
