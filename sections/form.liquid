@@ -79,78 +79,80 @@
 </div>
 
 <style>
-  .formMain {
-    background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/ba5820c5acf8872790f8ca3ff9043af7.jpg?v=1696038766');
-    height: 100vh;
-  }
-  .formWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    gap: 120px;
-  }
-  .formInfo {
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-  }
-  .firstFormInfo {
-    align-items: center;
-  }
-  .bottonPartFirstFormInfo {
-    display: flex;
-    gap: 25px;
-    margin-top: 12px;
-  }
-  .formTexts {
-    color: #FFF;
-    font-family: 'Kanit', sans-serif;
+  @media(min-width: 750px) {
+    .formMain {
+      background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/ba5820c5acf8872790f8ca3ff9043af7.jpg?v=1696038766');
+      height: 100vh;
+    }
+    .formWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 120px;
+    }
+    .formInfo {
+      display: flex;
+      flex-direction: column;
+      width: 40vw;
+    }
+    .firstFormInfo {
+      align-items: center;
+    }
+    .bottonPartFirstFormInfo {
+      display: flex;
+      gap: 25px;
+      margin-top: 12px;
+    }
+    .formTexts {
+      color: #FFF;
+      font-family: 'Kanit', sans-serif;
 
-  }
-  .formTexts h3 {
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  .formTexts h2 {
-    font-size: 88px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 10px 0;
-  }
-  .formTexts p {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .formTexts span {
-    font-size: 16px;
-    font-weight: 400;
-  }
-  .formulary {
-    width: 97%;
-    color: #BBB;
-    font-family: 'Kanit', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 20px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-  }
-  .fullName {
-    display: flex;
-    gap: 16px;
-    padding-top: 24px;
-  }
-  .fullName input {
-    padding-right: 10px;
-  }
-  .bottonFormulary {
-    padding-right: 0;
-  }
-  .formButton {
-    padding: 24px;
-    margin-bottom: 16px;
+    }
+    .formTexts h3 {
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .formTexts h2 {
+      font-size: 88px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 10px 0;
+    }
+    .formTexts p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .formTexts span {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .formulary {
+      width: 97%;
+      color: #BBB;
+      font-family: 'Kanit', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 20px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .fullName {
+      display: flex;
+      gap: 16px;
+      padding-top: 24px;
+    }
+    .fullName input {
+      padding-right: 10px;
+    }
+    .bottonFormulary {
+      padding-right: 0;
+    }
+    .formButton {
+      padding: 24px;
+      margin-bottom: 16px;
+    }
   }
 </style>
 {% schema %}
