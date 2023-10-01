@@ -45,15 +45,13 @@
     flex-direction: column;
     gap: 30px;
   }
-  .wraperInfoSection:nth-child(2) {
-    flex-direction: row-reverse;
-    margin: 140px 0;
-  }
+
   .infoSectionText {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40vw;
+    text-align: justify;
+    width: 80vw;
   }
   .infoSectionImg img {
     width: 175px;
@@ -69,22 +67,29 @@
   }
   .infoSectionText p {
     color: #4D4D4D;
-    margin: 36px 0;
+    margin: 20px 0;
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
-    text-transform: uppercase;
     font-weight: 500;
     line-height: 32px;
   }
   .infoSecctionBottonPart img {
     width: 99vw;
   }
-  @media(min-width: 769px) {}
+  @media(min-width: 769px) {
+    .infoSectionImg img {
+      width: 270px;
+    }
+  }
   @media(min-width: 1023px) {}
   @media(min-width: 1439px) {
     .wraperInfoSection {
       flex-direction: row;
       gap: 30px;
+    }
+    .wraperInfoSection:nth-child(2) {
+      flex-direction: row-reverse;
+      margin: 140px 0;
     }
 
   }
