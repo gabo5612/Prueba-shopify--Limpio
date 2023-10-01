@@ -183,6 +183,9 @@
     }
   }
   @media(min-width: 1023px) {
+    .formWrapper {
+      flex-direction: row;
+    };
     /*
     .formWrapper {
       flex-direction: row;
@@ -221,19 +224,20 @@
     .formTexts p {
       text-align: left;
     }
+    */
   }
-*/
-    @media(min-width: 1439px) {}
-  </style>
+
+  @media(min-width: 1439px) {}
+</style>
 {% schema %}
-    {
-      "name": "form",
+  {
+    "name": "form",
 
-      "presets": [
-        {
-          "name": "form"
+    "presets": [
+      {
+        "name": "form"
 
-        }
-      ]
-    }
-  {% endschema %}
+      }
+    ]
+  }
+{% endschema %}
