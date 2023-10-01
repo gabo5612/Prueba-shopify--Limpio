@@ -92,23 +92,26 @@
     }
   }
   @media(min-width: 1023px) {
-    .wraperInfoSection {
-      flex-direction: row;
-    }
-    .infoSection {
-      margin: 55px 70 -25px;
-    }
-    .infoSectionImg img {
-      width: 350px;
-    }
-  }
-  @media(min-width: 1439px) {
     .wraperInfoSection:nth-child(2) {
       flex-direction: row-reverse;
-      margin: 140px 0;
+    }
+    .wraperInfoSection {
+      flex-direction: row;
+      margin-bottom: 50px;
+
     }
 
+    .infoSectionText {
+      width: 40vw;
+    }
+    .infoSection {
+      margin: 55px 70px -25px;
+    }
+    .infoSectionImg img {
+      width: 375px;
+    }
   }
+  @media(min-width: 1439px) {}
 </style>
 {% schema %}
   {
