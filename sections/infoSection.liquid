@@ -35,13 +35,15 @@
     flex-direction: column;
     position: relative;
     z-index: 1;
-    margin-bottom: -75px;
+    margin: 55px 0 -25px;
+
   }
   .wraperInfoSection {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 160px;
+    flex-direction: column;
+    gap: 30px;
   }
   .wraperInfoSection:nth-child(2) {
     flex-direction: row-reverse;
@@ -53,14 +55,14 @@
     justify-content: center;
     width: 40vw;
   }
-
+  .infoSectionImg img {
+    width: 175px;
+    border-radius: 8px;
+  }
   .infoSectionText h3 {
-    margin: 0;
     color: #00095B;
-    leading-trim: both;
-    text-edge: cap;
     font-family: 'Kanit', sans-serif;
-    font-size: 56px;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1.12px;
     text-transform: uppercase;
@@ -69,7 +71,7 @@
     color: #4D4D4D;
     margin: 36px 0;
     font-family: 'DM Sans', sans-serif;
-    font-size: 24px;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
     line-height: 32px;
@@ -79,7 +81,13 @@
   }
   @media(min-width: 769px) {}
   @media(min-width: 1023px) {}
-  @media(min-width: 1439px) {}
+  @media(min-width: 1439px) {
+    .wraperInfoSection {
+      flex-direction: row;
+      gap: 30px;
+    }
+
+  }
 </style>
 {% schema %}
   {
