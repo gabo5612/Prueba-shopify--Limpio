@@ -28,31 +28,35 @@
 </div>
 
 <style>
+  .headerMainContent {
+    background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/headerMobile.jpg?v=1696166330');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    width: calc(100% - 4rem / var(--font-body-scale));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+  }
+  .headerMainContent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.48);
+    z-index: -1;
+  }
 
   @media(min-width: 750px) {
     .headerMainContent {
-      background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/8f8a289bedb414d0801d25743a5efc7b.jpg?v=1695854464');
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 95vh;
-      width: calc(100% - 4rem / var(--font-body-scale));
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      z-index: 0;
+      background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/HeaderDesktop.jpg?v=1696166334');
+
     }
 
-    .headerMainContent::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.4); /* Color de fondo oscuro con una opacidad del 40% */
-      z-index: -1;
-    }
 
 
     .headerBotton {
