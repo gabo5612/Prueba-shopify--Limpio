@@ -32,7 +32,7 @@
     background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/headerMobile.jpg?v=1696166330');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 95vh;
+    height: 85vh;
     width: calc(100% - 4rem / var(--font-body-scale));
     display: flex;
     flex-direction: column;
@@ -51,52 +51,59 @@
     z-index: -1;
   }
 
-  @media(min-width: 750px) {
+  .headerBotton {
+    width: 98vw;
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  .topIconHeader {
+    margin: 40px 0 120px 40px;
+  }
+  .textButtonHeader {
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    margin-left: 175px;
+    font-weight: 700;
+  }
+  .textButtonHeader h2 {
+    font-size: 56px;
+  }
+  .textButtonHeader h1 {
+    font-size: 112px;
+    padding-top: 32px;
+  }
+  .textButtonHeader p {
+    font-size: 24px;
+    line-height: 32px;
+
+    margin: 48px 0;
+  }
+  .buttons {
+    background: #37A9E8;
+    color: #fff;
+    padding: 32px;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  @media(min-width: 769px) {
     .headerMainContent {
       background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/HeaderDesktop.jpg?v=1696166334');
+      height: 95vh;
+    }
+  }
 
+  @media(min-width: 1439px) {
+    .headerMainContent {
+      background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Header4k.jpg?v=1696166340');
+      height: 95vh;
     }
 
 
 
-    .headerBotton {
-      width: 98vw;
-      display: flex;
-      justify-content: end;
-      gap: 40px;
-      margin-bottom: 60px;
-    }
-    .topIconHeader {
-      margin: 40px 0 120px 40px;
-    }
-    .textButtonHeader {
-      font-family: 'Kanit', sans-serif;
-      color: #fff;
-      margin-left: 175px;
-      font-weight: 700;
-    }
-    .textButtonHeader h2 {
-      font-size: 56px;
-    }
-    .textButtonHeader h1 {
-      font-size: 112px;
-      padding-top: 32px;
-    }
-    .textButtonHeader p {
-      font-size: 24px;
-      line-height: 32px;
-
-      margin: 48px 0;
-    }
-    .buttons {
-      background: #37A9E8;
-      color: #fff;
-      padding: 32px;
-      border: none;
-      border-radius: 4px;
-      font-size: 24px;
-      font-weight: 600;
-    }
   }
 </style>
 
