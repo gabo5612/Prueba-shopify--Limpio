@@ -1,11 +1,20 @@
 <div class="headerMainContent formMain">
   <div class="formWrapper">
     <div class="formInfo firstFormInfo">
-      <div><img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/D_and_D_logo.svg?v=1696082767" alt=""></div>
+      <div class="formTractoImg"><img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/D_and_D_logo.svg?v=1696082767" alt=""></div>
       <div class='bottonPartFirstFormInfo'>
-        <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/logo_2020_1_1.svg?v=1695999866" alt="">
-        <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860" alt="">
-        <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Component_1.svg?v=1695991865" alt="">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/logo_2020_1_1.svg?v=1695999866"
+          alt=""
+          class="headerBottonImg">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860"
+          alt=""
+          class="headerBottonLine">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Component_1.svg?v=1695991865"
+          alt=""
+          class="headerBottonImg">
       </div>
     </div>
     <div class="formInfo secondFormInfo">
@@ -90,11 +99,16 @@
     align-items: center;
     height: 100vh;
     gap: 120px;
+    flex-direction: column;
+  }
+  .formTractorImg img {
+    height: 100px;
+
   }
   .formInfo {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+
   }
   .firstFormInfo {
     align-items: center;
@@ -154,7 +168,11 @@
     margin-bottom: 16px;
   }
   @media(min-width: 769px) {}
-  @media(min-width: 1023px) {}
+  @media(min-width: 1023px) {
+    .formWrapper {
+      flex-direction: row;
+    }
+  }
   @media(min-width: 1439px) {}
 </style>
 {% schema %}
