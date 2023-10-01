@@ -18,6 +18,9 @@
       <img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860" alt="">
       <img src="{{ section.settings.bottonRightImg3 | img_url }}" alt="">
 
+      {% elseif section.settings.bottonRightImg1 != blank and section.settings.bottonRightImg3 %}
+
+      <img src="{{ section.settings.bottonRightImg3 | img_url }}" alt="">
     {% else %}
       <img src="{{ section.settings.bottonRightImg1 | img_url }}" alt="">
     {% endif %}
