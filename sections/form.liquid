@@ -183,6 +183,7 @@
     }
   }
   @media(min-width: 1023px) {
+    /*
     .formWrapper {
       flex-direction: row;
     }
@@ -191,30 +192,48 @@
       padding-top: 24px;
       display: flex;
       gap: 12px;
-      align-items: center; /* Align inputs vertically in the center */
+      align-items: center;
     }
-
+    .formInfo {
+      display: flex;
+      flex-direction: column;
+      width: 50vw;
+    }
     .formulary {
-      width: 50%; /* Set each input to take up 50% of the available width */
-      margin: 0; /* Remove margin from inputs */
+      width: 95%;
+      margin: 0;
     }
-
     .fullName input {
-      width: auto; /* Allow the inputs to expand to fit their content */
+      width: auto;
+    }
+    .formTractorImg img {
+      width: 500px;
+    }
+    .formTexts {
+      text-align: left;
+    }
+    .formTexts h2 {
+      font-size: 3rem;
+    }
+    .formTexts h3 {
+      font-size: 1.2rem;
+    }
+    .formTexts p {
+      text-align: left;
     }
   }
-
-  @media(min-width: 1439px) {}
-</style>
+*/
+    @media(min-width: 1439px) {}
+  </style>
 {% schema %}
-  {
-    "name": "form",
+    {
+      "name": "form",
 
-    "presets": [
-      {
-        "name": "form"
+      "presets": [
+        {
+          "name": "form"
 
-      }
-    ]
-  }
-{% endschema %}
+        }
+      ]
+    }
+  {% endschema %}
