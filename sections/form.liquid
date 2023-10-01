@@ -1,4 +1,4 @@
-<div class="headerMainContent formMain">
+<div class="formMain">
   <div class="formWrapper">
     <div class="formInfo firstFormInfo">
       <div class="formTractorImg"><img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/D_and_D_logo.svg?v=1696082767" alt=""></div>
@@ -92,6 +92,15 @@
   .formMain {
     background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/ba5820c5acf8872790f8ca3ff9043af7.jpg?v=1696038766');
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: calc(100% - 4rem / var(--font-body-scale));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
   }
   .formWrapper {
     display: flex;
@@ -121,6 +130,7 @@
   .formTexts {
     color: #FFF;
     font-family: 'Kanit', sans-serif;
+    text-align: center;
 
   }
   .formTexts h3 {
@@ -129,39 +139,38 @@
     text-transform: uppercase;
   }
   .formTexts h2 {
-    font-size: 1rem;
+    font-size: 2.4rem;
     text-transform: uppercase;
     font-weight: 700;
     margin: 10px 0;
   }
   .formTexts p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
+    text-align: justify;
+
   }
   .formTexts span {
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 400;
   }
   .formulary {
     color: #BBB;
     font-family: 'Kanit', sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
     border-radius: 4px;
     margin-bottom: 16px;
+    width: 90vw;
+    padding: 10px;
   }
   .fullName {
-    display: flex;
-    gap: 16px;
     padding-top: 24px;
   }
-
-  .bottonFormulary {
-    padding-right: 0;
-  }
   .formButton {
-    padding: 24px;
+    padding: 18px;
     margin-bottom: 16px;
+    width: -webkit-fill-available;
   }
   @media(min-width: 769px) {}
   @media(min-width: 1023px) {
