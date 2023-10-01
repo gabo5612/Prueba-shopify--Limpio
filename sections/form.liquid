@@ -196,12 +196,14 @@
     .formTractorImg img {
       width: 550px;
     };
-    .formulary {
-      width: -webkit-fill-available;
-    };
+    .formulary,
     .formButton {
-      width: -webkit-fill-available;
+      width: 100%;
+      width: -moz-available; /* WebKit-based browsers will ignore this. */
+      width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+      width: fill-available;
     };
+
   }
   @media(min-width: 1439px) {
     .formTractorImg img {
