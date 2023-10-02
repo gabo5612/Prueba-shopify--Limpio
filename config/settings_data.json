@@ -11,7 +11,6 @@
           "buttonText": "Enter Now",
           "urlButton": "#",
           "bottonRightImg1": "shopify:\/\/shop_images\/logo_2020_1_1.svg",
-          "bottonRightImg2": "shopify:\/\/shop_images\/Line_1.png",
           "bottonRightImg3": "shopify:\/\/shop_images\/Component_1.svg"
         }
       },
@@ -28,7 +27,8 @@
       "video": {
         "type": "video",
         "settings": {
-          "video": "shopify:\/\/files\/videos\/Noisestorm - Crab Rave [Monstercat Release].mp4"
+          "video": "shopify:\/\/files\/videos\/Noisestorm - Crab Rave [Monstercat Release].mp4",
+          "coverImg": "shopify:\/\/shop_images\/Frame_7_1.png"
         }
       },
       "infoSection": {
