@@ -34,3 +34,26 @@
     });
   });
 </script>
+
+{% schema %}
+  {
+    "name": "Video",
+    "class": "video-section",
+    "settings": [
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Select your video"
+      }, {
+        "type": "image_picker",
+        "id": "coverImg",
+        "label": "Select your cover image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Video"
+      }
+    ]
+  }
+{% endschema %}
