@@ -1,7 +1,10 @@
 <div class="headerMainContent headBackground">
   <div class="wrapper">
     <div class="topIconHeader">
-      <img src="{{ section.settings.iconoIzquierdoHeader | img_url }}" alt="">
+      <img
+        src="{{ section.settings.iconoIzquierdoHeader | img_url }}"
+        alt=""
+        loading="lazy">
     </div>
     <div class="textButtonHeader">
       <h2>{{ section.settings.subtitleHeader }}</h2>
@@ -17,27 +20,32 @@
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg">
+        class="headerBottonImg"
+        loading="lazy">
       <img
         src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860"
         alt=""
-        class="headerBottonLine">
+        class="headerBottonLine"
+        loading="lazy">
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg">
+        class="headerBottonImg"
+        loading="lazy">
 
     {% else section.settings.bottonRightImg1 != blank and section.settings.bottonRightImg3 %}
 
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg">
+        class="headerBottonImg"
+        loading="lazy">
     {% else %}
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg">
+        class="headerBottonImg"
+        loading="lazy">
     {% endif %}
   </div>
 </div>
