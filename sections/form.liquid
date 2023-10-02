@@ -28,7 +28,7 @@
     <div class="formInfo secondFormInfo">
       <div class="formTexts">
         <h3>Enter now for a chance to win</h3>
-        <h2>two tickets to dozers & dirt</h2>
+        <h2>two tickets to <br> dozers & dirt</h2>
         <p>Includes: A chance for your child to operate heavy equipment, get up close to a RAVEN helicopter, & more!</p>
       </div>
       <div class="formInputWrapper">
@@ -166,7 +166,6 @@
     padding: 10px 0 10px 10px
   }
   .fullName {
-
     padding-top: 24px;
     display: flex;
     flex-direction: column;
@@ -206,7 +205,18 @@
       flex-direction: row;
       gap: 16px;
     }
-
+    .formTexts {
+      text-align: left;
+    }
+    .formTexts h2 {
+      font-size: 3rem;
+    }
+    .formTexts h3 {
+      font-size: 1.3rem;
+    }
+    .formTexts p {
+      text-align: left;
+    }
   }
   @media(min-width: 1439px) {
     .formTractorImg img {
