@@ -6,7 +6,7 @@
         <div class="product">
           <img src="{{ product.featured_image | image_url: width: 1920 | prepend: "https:" }}" alt="{{ product.title }}" />
           <h2>{{ product.title }}</h2>
-          <p>Precio: <span>{{ product.price }}</span></p>
+          <p>Precio: <span class="price">{{ product.price }}</span></p>
         </div>
       {% endfor %}
     </div>
@@ -40,6 +40,7 @@
     width: 175px;
     font-family: 'Kanit', sans-serif;
     align-items: center;
+    text-align: center;
   }
   .product h2, .product p{
       font-weight: bold;
@@ -53,5 +54,25 @@
   .product img:hover{
     transition: transform 0.2s ease;
     transform: scale(1.05);
+  }
+  .price{
+    color: #00095B;
+    font-weight: 500;
+  }
+  @media(min-width: 769px) {
+    .featuredProducts h3{
+      font-size: 2rem;
+    }
+    .product{
+      width: 220px;
+    }
+    .product img {
+    width: 220px;
+    height: 250px;
+    }
+  }
+  @media(min-width: 1023px) {
+  }
+  @media(min-width: 1439px) {
   }
 </style>
