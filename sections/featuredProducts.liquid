@@ -2,6 +2,6 @@
   <div class="product">
     <h2>{{ product.title }}</h2>
     <p>Precio: {{ product.price }}</p>
-    <img src="{{ product.image.src }}" alt="{{ product.title }}" />
+    <img src="{{ product.image.src | img_url }}" alt="{{ product.title }}" />
   </div>
 {% endfor %}
