@@ -31,6 +31,7 @@
     position: relative;
     width: 100%;
     padding-top: 56.25%;
+    cursor: pointer;
   }
   .video-container button {
     position: absolute;
@@ -41,7 +42,7 @@
     background-color: #5f9ea000;
   }
   .video-container button:hover {
-    filter:brightness(1.07);
+    filter: sepia(5%) hue-rotate(195deg) brightness(0.2) saturate(2);
   }
   video,
   #coverImg {
@@ -51,6 +52,9 @@
     width: 100%;
     height: 100%;
     border-radius: 12px;
+  }
+  #coverImg {
+    filter:
   }
 </style>
 
