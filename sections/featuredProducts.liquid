@@ -1,0 +1,7 @@
+{% for product in collections.audomated-collection %}
+  <div class="product">
+    <h2>{{ product.title }}</h2>
+    <p>Precio: {{ product.price }}</p>
+    <img src="{{ product.image.src }}" alt="{{ product.title }}" />
+  </div>
+{% endfor %}
