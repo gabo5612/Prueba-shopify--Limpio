@@ -29,6 +29,11 @@
     width: 100%;
     padding-top: 56.25%;
   }
+  .video-container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
   video,
   #coverImg {
     position: absolute;
@@ -46,6 +51,11 @@
     const videoPlayer = document.getElementById("videoPlayer");
     const videoButton = document.getElementById("videoButton")
     coverImg.addEventListener("click", function() {
+      coverImg.style.display = "none";
+      videoButton.style.display = "none"
+      videoPlayer.play();
+    });
+    videoButton.addEventListener("click", function() {
       coverImg.style.display = "none";
       videoButton.style.display = "none"
       videoPlayer.play();
