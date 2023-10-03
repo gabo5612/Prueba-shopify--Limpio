@@ -2,7 +2,7 @@
   <div class="featuredProducts">
     <h3>Featured Products</h3>
     <div class="productsWrapper">
-      {% for product in collections['Hydrogen'].products limit: 5 %}
+      {% for product in collections['Hydrogen'].products limit: 3 %}
         <div class="product">
           <img src="{{ product.featured_image | image_url: width: 1920 | prepend: "https:" }}" alt="{{ product.title }}" />
           <h2>{{ product.title }}</h2>
