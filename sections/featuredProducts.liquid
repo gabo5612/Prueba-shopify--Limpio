@@ -6,7 +6,7 @@
         <div class="product">
           <img src="{{ product.featured_image | image_url: width: 1920 | prepend: "https:" }}" alt="{{ product.title }}" />
           <h2>{{ product.title }}</h2>
-          <p>Precio: <span class="price">{{ product.price }}</span></p>
+          <p>Precio: <span>{{ product.price }}</span></p>
         </div>
       {% endfor %}
     </div>
@@ -31,19 +31,27 @@
     align-items: center;
     gap: 14px;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .product {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 12px;
+    width: 175px;
     font-family: 'Kanit', sans-serif;
+    align-items: center;
   }
-  .product h2, .price{
+  .product h2, .product p{
       font-weight: bold;
   }
   .product img {
     width: 175px;
     height: 200px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  .product img:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.05);
   }
 </style>
