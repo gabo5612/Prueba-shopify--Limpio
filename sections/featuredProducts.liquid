@@ -28,14 +28,19 @@
 
   .productsWrapper {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 14px;
+    flex-wrap: wrap;
   }
   .product {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 12px;
+    font-family: 'Kanit', sans-serif;
+  }
+  .product h2, .price{
+      font-weight: bold;
   }
   .product img {
     width: 175px;
