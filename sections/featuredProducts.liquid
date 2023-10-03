@@ -2,7 +2,7 @@
   <h3>Featured Products</h3>
   {% for product in collections['Hydrogen'].products %}
     <div class="product">
-      <img src="{{ product.image.src | img_url: width:1080}}" alt="{{ product.title }}" />
+      <img src="{{ product.images.src | img_url: width:1080}}" alt="{{ product.title }}" />
       <h2>{{ product.title }}</h2>
       <p>Precio: {{ product.price }}</p>
     </div>
