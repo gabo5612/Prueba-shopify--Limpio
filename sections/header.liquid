@@ -20,7 +20,7 @@
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg"
+        class="headerBottonImg imgHover"
         loading="lazy">
       <img
         src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860"
@@ -30,7 +30,7 @@
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg"
+        class="headerBottonImg imgHover"
         loading="lazy">
 
     {% else section.settings.bottonRightImg1 != blank and section.settings.bottonRightImg3 %}
@@ -38,13 +38,13 @@
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg"
+        class="headerBottonImg imgHover"
         loading="lazy">
     {% else %}
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg"
+        class="headerBottonImg imgHover"
         loading="lazy">
     {% endif %}
   </div>
@@ -129,14 +129,20 @@
     font-weight: 600;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease;
-
     cursor: pointer;
   }
   .buttons:hover {
     transition: transform 0.2s ease;
     transform: scale(1.05);
   }
-
+  .imgHover {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  .imgHover:hover {
+    transition: transform 0.2s ease;
+    transform: scale(1.05);
+  }
   @media(min-width: 769px) {
     .headerMainContent {
       background-image: url('https://cdn.shopify.com/s/files/1/0832/5244/5464/files/HeaderDesktop.jpg?v=1696166334');
