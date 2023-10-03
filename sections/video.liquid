@@ -11,6 +11,7 @@
         src="{{ section.settings.coverImg | image_url: width: 1920 }}"
         alt="Cover Image"
         loading="lazy" />
+      <button id="videoButton"><img src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Button_Play.svg?v=1696357293" alt="PlayButton"></button>
     </div>
   </div>
 </div>
@@ -29,7 +30,7 @@
     padding-top: 56.25%;
   }
   video,
-  img#coverImg {
+  #coverImg {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,9 +44,10 @@
   document.addEventListener("DOMContentLoaded", function() {
     const coverImg = document.getElementById("coverImg");
     const videoPlayer = document.getElementById("videoPlayer");
-
+    const videoButton = document.getElementById("videoButton")
     coverImg.addEventListener("click", function() {
       coverImg.style.display = "none";
+      videoButton.style.display = "none"
       videoPlayer.play();
     });
   });
