@@ -32,59 +32,48 @@
         <h2>two tickets to <br> dozers & dirt</h2>
         <p>Includes: A chance for your child to operate heavy equipment, get up close to a RAVEN helicopter, & more!</p>
       </div>
-      <div
-        class="formInputWrapper"
-        data-id="MTYyNzY="
-        data-id="16276"
-        id="globo-formbuilder-16276">
-        <div class="globo-formbuilder" data-id="MTYyNzY=">d</div>
-
-        <form
-          class="g-container"
-          novalidate=""
-          action="https://app.powerfulform.com//api/front/form/16276/send"
-          method="POST"
-          enctype="multipart/form-data"
-          data-id="16276">
+      <div class="formInputWrapper">
+        <div class="globo-formbuilder" data-id="MTYyNzY="></div>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
 
           <div class="fullName">
 
             <input
               type="text"
-              data-type="text"
-              id="16276-text"
-              name="text"
-              class="formulary"
-              placeholder="First Name" />
+              name="contact[first_name]"
+
+              placeholder="First name"
+              class="formulary" />
             <input
               type="text"
-              data-type="text"
-              id="16276-text-2"
-              name="text-2"
-              class="formulary"
-              placeholder="Last Name" />
+              name="contact[last_name]"
+              id="last-name"
+              placeholder="Last name"
+              class="formulary" />
           </div>
           <div class="bottonForm">
 
             <input
-              type="text"
-              data-type="email"
-              id="16276-email"
-              name="email"
-              class="formulary bottonFormulary"
-              placeholder="Email" />
-            <input
-              type="text"
-              data-type="phone"
-              id="16276-phone"
-              name="phone"
-              placeholder="Phone Number"
+              type="email"
+              name="contact[email]"
+              id="email"
+              placeholder="Email"
               class="formulary bottonFormulary" />
+
+
+
             <input
-              type="text"
-              data-type="text"
-              id="16276-text-7"
-              name="text-7"
+              type="tel"
+              name="contact[phone]"
+              id="phone"
+              placeholder="Phone"
+              class="formulary bottonFormulary" />
+
+
+
+            <input
+              name="contact[zipcode]"
+              id="zipCode"
               placeholder="Zip Code"
               class="formulary bottonFormulary" />
 
@@ -186,11 +175,58 @@
     width: 100%;
 
   }
-
+  .header {
+    display: none;
+  }
   /*
   <form action="/contact" method="post" >
         
-  
+  <div class="fullName">
+
+    <input
+      type="text"
+      name="contact[first_name]"
+      id="first-name"
+      placeholder="First name"
+      class="formulary" />
+    <input
+      type="text"
+      name="contact[last_name]"
+      id="last-name"
+      placeholder="Last name"
+      class="formulary" />
+  </div>
+  <div class="bottonForm">
+
+    <input
+      type="email"
+      name="contact[email]"
+      id="email"
+      placeholder="Email"
+      class="formulary bottonFormulary" />
+
+
+
+    <input
+      type="tel"
+      name="contact[phone]"
+      id="phone"
+      placeholder="Phone"
+      class="formulary bottonFormulary" />
+
+
+
+    <input
+      name="contact[zipcode]"
+      id="zipCode"
+      placeholder="Zip Code"
+      class="formulary bottonFormulary" />
+
+    <input
+      type="submit"
+      value="Submit"
+      class="buttons formButton" />
+  </div>
   
   */
   @media(min-width: 769px) {
