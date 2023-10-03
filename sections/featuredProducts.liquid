@@ -6,7 +6,7 @@
         <div class="product">
           <img src="{{ product.featured_image | image_url: width: 1920 | prepend: "https:" }}" alt="{{ product.title }}" />
           <h2>{{ product.title }}</h2>
-          <p>Precio: {{ product.price }}</p>
+          <p>Precio: <span class="price">{{ product.price }}</span></p>
         </div>
       {% endfor %}
     </div>
@@ -25,6 +25,7 @@
     margin-bottom: 20px;
     color: #00095B;
   }
+
   .productsWrapper {
     display: flex;
     flex-direction: column;
@@ -34,7 +35,7 @@
   .product {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 12px;
   }
   .product img {
     width: 175px;
