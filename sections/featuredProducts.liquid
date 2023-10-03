@@ -1,12 +1,14 @@
 <div class="featuredProducts">
   <h3>Featured Products</h3>
-  {% for product in collections['Hydrogen'].products %}
-    <div class="product">
-      <img src="{{ product.featured_image | image_url: width: 1920 | prepend: "https:" }}" alt="{{ product.title }}" />
-      <h2>{{ product.title }}</h2>
-      <p>Precio: {{ product.price }}</p>
-    </div>
-  {% endfor %}
+  <div class="productsWrapper">
+    {% for product in collections['Hydrogen'].products %}
+      <div class="product">
+        <img src="{{ product.featured_image | image_url: width: 1920 | prepend: "https:" }}" alt="{{ product.title }}" />
+        <h2>{{ product.title }}</h2>
+        <p>Precio: {{ product.price }}</p>
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 <style>
@@ -22,11 +24,16 @@
     margin-bottom: 20px;
     color: #00095B;
   }
-  .product {
+  .productsWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .product img {
     width: 175px;
