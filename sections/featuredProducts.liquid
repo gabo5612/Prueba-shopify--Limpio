@@ -41,6 +41,7 @@
     font-family: 'Kanit', sans-serif;
     align-items: center;
     text-align: center;
+    cursor: pointer;
   }
   .product h2, .product p{
       font-weight: bold;
@@ -49,7 +50,7 @@
     width: 175px;
     height: 200px;
     transition: transform 0.2s ease;
-    cursor: pointer;
+    
   }
   .product img:hover{
     transition: transform 0.2s ease;
@@ -72,7 +73,18 @@
     }
   }
   @media(min-width: 1023px) {
+    .featuredProducts h3 {
+    font-size: 3rem;
+}
   }
   @media(min-width: 1439px) {
+    .product img {
+    width: 275px;
+    height: 320px;
+    }
+    .product {
+        width: 280px;
+    }
   }
+
 </style>
