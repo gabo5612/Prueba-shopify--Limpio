@@ -16,12 +16,12 @@
       </a>
     </div>
   </div>
-  <div class="headerBotton">
+  <div class="headerBotton entryAni">
     {% if section.settings.bottonRightImg1 != blank and section.settings.bottonRightImg3 != blank %}
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover .animate-in">
+        class="headerBottonImg imgHover">
       <img
         src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860"
         alt=""
@@ -29,19 +29,19 @@
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover .animate-in">
+        class="headerBottonImg imgHover">
 
     {% else section.settings.bottonRightImg1 != blank and section.settings.bottonRightImg3 %}
 
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover .animate-in">
+        class="headerBottonImg imgHover">
     {% else %}
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover .animate-in">
+        class="headerBottonImg imgHover">
     {% endif %}
   </div>
 </div>
@@ -50,7 +50,7 @@
   function handleAnimation(entries, observer) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('.entryAni');
+        entry.target.classList.add('entryAni');
         observer.unobserve(entry.target);
       }
     });
