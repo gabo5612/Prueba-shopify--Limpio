@@ -50,7 +50,7 @@
   function handleAnimation(entries, observer) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('entryAni');
+        entry.target.classList.add('.entryAni');
         observer.unobserve(entry.target);
       }
     });
