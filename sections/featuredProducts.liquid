@@ -2,11 +2,13 @@
   <div class="featuredProducts">
     <h3>Featured Products</h3>
     <div class="productsWrapper">
-      {% for product in collections['Hydrogen'].products limit: 5 %}
+      {% for product in collections['Hydrogen'].products %}
         <div class="product">
           <img src="{{ product.featured_image | image_url: width: 1920 | prepend: "https:" }}" alt="{{ product.title }}" />
           <h2>{{ product.title }}</h2>
-          <p>Precio: <span class="price">{{ product.price }}</span></p>
+          <p>Precio:
+            <span class="price">{{ product.price }}</span>
+          </p>
         </div>
       {% endfor %}
     </div>
@@ -43,48 +45,48 @@
     text-align: center;
     cursor: pointer;
   }
-  .product h2, .product p{
-      font-weight: bold;
+  .product h2,
+  .product p {
+    font-weight: bold;
   }
   .product img {
     width: 175px;
     height: 200px;
     transition: transform 0.2s ease;
-    
+
   }
-  .product img:hover{
+  .product img:hover {
     transition: transform 0.2s ease;
     transform: scale(1.05);
   }
-  .price{
+  .price {
     color: #00095B;
     font-weight: 500;
   }
   @media(min-width: 769px) {
-    .featuredProducts h3{
+    .featuredProducts h3 {
       font-size: 2rem;
     }
-    .product{
+    .product {
       width: 220px;
     }
     .product img {
-    width: 220px;
-    height: 250px;
+      width: 220px;
+      height: 250px;
     }
   }
   @media(min-width: 1023px) {
     .featuredProducts h3 {
-    font-size: 3rem;
-}
+      font-size: 3rem;
+    }
   }
   @media(min-width: 1439px) {
     .product img {
-    width: 275px;
-    height: 320px;
+      width: 275px;
+      height: 320px;
     }
     .product {
-        width: 280px;
+      width: 280px;
     }
   }
-
 </style>
