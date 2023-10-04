@@ -5,7 +5,7 @@
         src="{{ section.settings.iconoIzquierdoHeader | img_url }}"
         alt=""
         loading="lazy"
-        class="imgHover">
+        class="imgHover entryAni">
     </div>
     <div class="textButtonHeader">
       <h2>{{ section.settings.subtitleHeader }}</h2>
@@ -21,7 +21,7 @@
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover"
+        class="headerBottonImg imgHover entryAni"
         loading="lazy">
       <img
         src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860"
@@ -30,7 +30,7 @@
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover"
+        class="headerBottonImg imgHover entryAni"
         loading="lazy">
 
     {% else section.settings.bottonRightImg1 != blank and section.settings.bottonRightImg3 %}
@@ -38,13 +38,13 @@
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover"
+        class="headerBottonImg imgHover entryAni"
         loading="lazy">
     {% else %}
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover"
+        class="headerBottonImg imgHover entryAni"
         loading="lazy">
     {% endif %}
   </div>
@@ -85,7 +85,9 @@
       transform: translateY(0);
     }
   }
-
+  .entryAni {
+    animation: entryAnimation 1s ease forwards;
+  }
   .headerBotton {
     display: flex;
     justify-content: center;
@@ -151,7 +153,6 @@
   .imgHover {
     transition: transform 0.2s ease;
     cursor: pointer;
-    animation: entryAnimation 1s ease forwards;
   }
   .imgHover:hover {
     transition: transform 0.2s ease;

@@ -4,7 +4,10 @@
     <div class="productsWrapper">
       {% for product in collections['Hydrogen'].products %}
         <div class="product">
-          <img src="{{ product.featured_image | image_url: width: 1920 | prepend: "https:" }}" alt="{{ product.title }}" />
+          <img
+            src="{{ product.featured_image | image_url: width: 1920 | prepend: "https:" }}"
+            alt="{{ product.title }}"
+            class="entryAni" />
           <h2>{{ product.title }}</h2>
           <p>Precio:
             <span class="price">{{ product.price }}</span>
