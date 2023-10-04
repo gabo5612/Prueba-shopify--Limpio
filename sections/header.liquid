@@ -55,7 +55,7 @@
   function handleAnimation(entries, observer) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
+        entry.target.classList.add('entryAni');
         observer.unobserve(entry.target);
       }
     });
@@ -94,22 +94,24 @@
     background-color: rgba(0, 0, 0, 0.48);
     z-index: -1;
   }
-  .animate-in {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 1s, transform 1s;
+  @keyframes entryAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-
-  .in-view {
-    opacity: 1;
-    transform: translateY(0);
+  .entryAni {
+    animation: entryAnimation 1s ease forwards;
   }
   .headerBotton {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-bottom: 60px;
-    animation: entryAnimation 1s ease forwards;
 
   }
 
