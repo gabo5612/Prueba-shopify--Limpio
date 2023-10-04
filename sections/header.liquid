@@ -21,7 +21,7 @@
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover"
+        class="headerBottonImg imgHover .animate-in"
         loading="lazy">
       <img
         src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860"
@@ -31,7 +31,7 @@
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover"
+        class="headerBottonImg imgHover .animate-in"
         loading="lazy">
 
     {% else section.settings.bottonRightImg1 != blank and section.settings.bottonRightImg3 %}
@@ -50,6 +50,25 @@
     {% endif %}
   </div>
 </div>
+<script>
+
+  function handleAnimation(entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }
+
+
+  const observer = new IntersectionObserver(handleAnimation, {threshold: 0.2});
+
+
+  document.querySelectorAll('.animate-in').forEach((element) => {
+    observer.observe(element);
+  });
+</script>
 
 <style>
 
