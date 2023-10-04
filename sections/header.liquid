@@ -21,7 +21,8 @@
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover">
+        class="headerBottonImg imgHover"
+        loading="lazy">
       <img
         src="https://cdn.shopify.com/s/files/1/0832/5244/5464/files/Line_1.png?v=1695991860"
         alt=""
@@ -29,41 +30,26 @@
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover">
+        class="headerBottonImg imgHover"
+        loading="lazy">
 
     {% else section.settings.bottonRightImg1 != blank and section.settings.bottonRightImg3 %}
 
       <img
         src="{{ section.settings.bottonRightImg3 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover">
+        class="headerBottonImg imgHover"
+        loading="lazy">
     {% else %}
       <img
         src="{{ section.settings.bottonRightImg1 | img_url }}"
         alt=""
-        class="headerBottonImg imgHover">
+        class="headerBottonImg imgHover"
+        loading="lazy">
     {% endif %}
   </div>
 </div>
-<script>
 
-  function handleAnimation(entries, observer) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('entryAni');
-        observer.unobserve(entry.target);
-      }
-    });
-  }
-
-
-  const observer = new IntersectionObserver(handleAnimation, {threshold: 0.2});
-
-
-  document.querySelectorAll('.imgHover').forEach((element) => {
-    observer.observe(element);
-  });
-</script>
 
 <style>
 
@@ -99,9 +85,7 @@
       transform: translateY(0);
     }
   }
-  .entryAni {
-    animation: entryAnimation 1s ease forwards;
-  }
+
   .headerBotton {
     display: flex;
     justify-content: center;
@@ -167,6 +151,7 @@
   .imgHover {
     transition: transform 0.2s ease;
     cursor: pointer;
+    animation: entryAnimation 1s ease forwards;
   }
   .imgHover:hover {
     transition: transform 0.2s ease;
