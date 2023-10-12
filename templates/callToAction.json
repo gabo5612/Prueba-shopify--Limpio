@@ -1,0 +1,11 @@
+{
+    "name": "Call to Action",
+    "sections": {
+      "main": {
+        "type": "Call-to-Action"
+    }
+    },
+    "order": [
+      "main"
+    ]
+  }
