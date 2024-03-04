@@ -8,8 +8,9 @@
         class="imgHover entryAni">
     </div>
     <div class="textButtonHeader">
-      <h2>{{ section.settings.subtitleHeader }} Test for preview</h2>
+      <h2>{{ section.settings.subtitleHeader }}</h2>
       <h1>{{ section.settings.titleHeader }}</h1>
+      <h4>{{ section.settings.testing }}</h4>
       <p>{{ section.settings.textHeader }}</p>
       <a href="{{section.settings.urlButton}}">
         <button class="buttons">{{ section.settings.buttonText }}</button>
@@ -256,6 +257,11 @@
       {
         "type": "text",
         "id": "subtitleHeader",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "testing",
         "label": "Subtitle"
       },
       {
