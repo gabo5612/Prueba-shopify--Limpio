@@ -6,6 +6,7 @@
         "settings": {
           "iconoIzquierdoHeader": "shopify:\/\/shop_images\/Ford_Logo_Nav.svg",
           "subtitleHeader": "WIN TICKETS TO",
+          "testing": "Cambio correcto. Prueba finalizada.",
           "titleHeader": "DOZERS & DIRT 2023",
           "textHeader": "Every moment at Dozers & Dirt supports the Northern Nevada Children’s Cancer Foundation. <br>Want in? Enter below for a chance to win a pair of tickets, courtesy of your local Ford Stores.",
           "buttonText": "Enter Now",
@@ -50,19 +51,16 @@
         "type": "form",
         "settings": {
         }
+      },
+      "featuredProducts": {
+        "type": "featuredProducts",
+        "settings": {
+        }
       }
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "6279071938380501511": {
-        "type": "shopify:\/\/apps\/powerful-form-builder\/blocks\/app-embed\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Default": {
